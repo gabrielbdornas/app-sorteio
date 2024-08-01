@@ -1,7 +1,5 @@
-from random import randrange
+from sorteio import sorteio
 
-lista = ['Gabriel', 'Maria', 'José']
-
-def sorteio(lista):
-    sorteado = randrange(0,len(lista))
-    return lista[sorteado]
+nomes = input('Quais nomes gostaria de incluir no sorteio (informe separando por virgula): ')
+sorteado = sorteio(nomes.split(','))
+print(sorteado)
